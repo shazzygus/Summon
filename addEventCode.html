@@ -1,0 +1,63 @@
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <!--css-->
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap-theme.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Vibur' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300italic' rel='stylesheet' type='text/css'>
+    <link href="css/shared.css" rel="stylesheet" type="text/css">
+    <link href="css/addEventCode.css" rel="stylesheet" type="text/css">
+    
+    <!--js-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/addEventCode.js"></script>
+    <script src="js/shared.js"></script>
+ 
+    
+    <!--content-->
+     <div class='title'>
+        <div class='butt'>
+            <a onclick="javascript:window.history.back();return false;" STYLE="text-decoration: none"><-</a> 
+        </div>
+    SUMMON 
+       <div class='home'>
+           <a href="mainFilled.html"><img src="img/home.png"></a>
+       </div>
+    </div>    
+    
+  </head>
+  <body>
+   <div class = 'banner'>Add Event</div>
+  
+    <div id='code' class='overlay'>
+   
+      <div class=head align=center>Enter Code</div>
+      <form align=center>
+        <input id = "code_val" type="text" name="eventCode"><br>
+      </form>
+      <div align=center>
+            <div class="buttons">
+                <a onclick = "var input = document.getElementById('code_val').value;
+                if(input == '')
+                    alert('Must Enter Valid Code');
+                if(input == 'BOBS123') 
+                    window.location = 'viewEvent.html';
+                if(input == 'KELLY456')
+                    window.location = 'viewEvent.1.html';
+                if(input == 'FAM789')
+                    window.location = 'viewEvent.1.2.html';
+                if(input == 'MIKEGRAD')
+                    window.location = 'viewEvent.1.2.3.html';
+                 
+                 
+                 "  align=center STYLE="text-decoration: none">continue</a>
+            </div>
+      </div>
+    </div>
+    
+ 
+  </body>
+</html>

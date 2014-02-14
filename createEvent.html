@@ -1,0 +1,79 @@
+<html>
+  <head>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--css-->
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap-theme.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Vibur' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300italic' rel='stylesheet' type='text/css'>
+    <link href="css/shared.css" rel="stylesheet" type="text/css">
+    <link href="css/createEvent.css" rel="stylesheet" type="text/css">
+    
+    <!--js-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/createEvent.js"></script>
+    <script src="js/shared.js"></script>
+    
+    <!--content-->
+     <div class='title'>
+        <div class='butt'>
+            <a onclick="javascript:window.history.back();return false;" STYLE="text-decoration: none"><-</a> 
+        </div>
+    SUMMON 
+       <div class='home'>
+           <a href="mainFilled.html"><img src="img/home.png"></a>
+       </div>
+    </div> 
+  </head>
+  <body>
+      <div class = 'banner'>Create Event</div>
+      <div class='content'>
+      <div class='container'>
+      <div class = 'overlay'>
+      <form>
+          <br>
+          Event Title: <input id = "eventTitle" type="text" name="eventTitle" ><br>
+          Date: <input type="text" name="date" id = "date"><br>
+          Time: <input type="text" name="time" id = "time"><br>
+          Where: <input type="text" name="where" id="where">
+      </form>
+      <!-- <button onclick="location.href='./event.html'" align=center 
+          type="button">Create</button> -->
+      <div class="buttons">
+      
+      
+         <a onclick="var input = document.getElementById('eventTitle').value;
+            if(input == '')
+                alert('Field Blank');
+            if(input == 'Bobs 21st RAGER!!')
+                window.location = 'confirmCreateEvent.html';
+            if(input == 'Kellys Baby Shower')
+                window.location = 'confirmCreateEvent.1.html';
+            if(input == 'Family Reunion')
+                window.location = 'confirmCreateEvent.1.2.html';
+            if(input == 'Mikey Mikes Graduation')
+                window.location = 'confirmCreateEvent.1.2.3.html';
+            
+         "
+         
+         align=center STYLE="text-decoration: none">continue</a>
+      </div> 
+         
+     <!-- <button onclick="location.href='confirmCreateEvent.html'" align=center id = "testButton"> Create </button> -->
+      <!--<p id = "putTestVals"> Put test values here </p>-->
+      <script>
+      function getFormValuess()
+      {
+          var eventTitle = document.getElementById("eventTitle").value;
+          document.getElementById("putTestVals").innerHTML=eventTitle;
+          alert("From scripts");
+      }
+      </script>
+    </div>
+  </div>
+  </div>
+  
+
+  </body>
+</html>
